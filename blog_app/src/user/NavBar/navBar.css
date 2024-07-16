@@ -43,9 +43,9 @@
 .logo {
     width: 150px;
     height: 80px;
-    background-color: #A1D6E2;
-    color: #1995AD;
-    border-radius: 50%;
+    
+    color:white;
+    
     display: flex;
     align-items: center;
     justify-content: center;
