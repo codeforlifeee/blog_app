@@ -1,0 +1,98 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1; /* Background color */
+    color: #333;
+  }
+  
+  .comment-container {
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start; /* Aligned to start for better layout */
+    padding: 20px;
+    gap: 20px; /* Added gap for better spacing */
+    background-color: #A1D6E2; /* Container background color */
+  }
+  
+  /* Styled scrollbar */
+  .comment-container::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .comment-container::-webkit-scrollbar-thumb {
+    background-color: #1995AD; /* Scrollbar color */
+    border-radius: 10px;
+  }
+  
+  .comment-card {
+    width: 280px;
+    min-height: 280px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .comment-card:hover {
+    transform: translateY(-10px); /* Hover effect */
+  }
+  
+  .comment-card p {
+    margin-bottom: 10px;
+  }
+  
+  .delete-button {
+    border: none;
+    padding: 10px;
+    background-color: #1995AD; /* Button color */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .delete-button:hover {
+    background-color: #145A70; /* Darker shade for hover */
+  }
+  
+  /* Specific text styling */
+  .comment-card p {
+    color: #555;
+  }
+  
+  .comment-card .email {
+    font-weight: bold;
+    color: #1995AD; /* Email text color */
+  }
+  
+  .comment-card .timestamp {
+    font-size: 0.8em;
+    color: #999;
+    margin-top: auto; /* Pushes timestamp to the bottom */
+  }
+  
+  /* Header styling for better structure */
+  h1 {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+    color: #1995AD;
+  }
+  

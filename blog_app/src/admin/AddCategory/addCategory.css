@@ -1,0 +1,103 @@
+/* Container for the whole form */
+.cat-container {
+  height: 100vh; /* Full viewport height */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F1F1F2; /* Light background color */
+  padding: 20px;
+  box-sizing: border-box; /* Ensures padding is included in the total width and height */
+}
+
+/* Form styling */
+.cat-form {
+  width: 100%;
+  max-width: 500px; /* Max width for better responsiveness */
+  padding: 30px;
+  background-color: #A1D6E2; /* Main background color for the form */
+  border: 2px solid #1995AD; /* Border color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for a 3D effect */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box; /* Ensures padding is included in the total width and height */
+}
+
+/* Form elements styling */
+.cat-form input[type="text"],
+.cat-form input[type="file"],
+.cat-form input[type="submit"] {
+  width: 100%;
+  max-width: 400px; /* Max width for better responsiveness */
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensures padding is included in the total width and height */
+}
+
+.cat-form input[type="text"],
+.cat-form input[type="file"] {
+  background-color: #F1F1F2; /* Background for the input field */
+  border: 1px solid #1995AD; /* Border color for the input field */
+  color: #333; /* Text color */
+  transition: border-color 0.3s ease;
+}
+
+.cat-form input[type="text"]:focus,
+.cat-form input[type="file"]:focus {
+  border-color: #007bff; /* Border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+.cat-form input[type="submit"] {
+  background-color: #1995AD; /* Submit button background */
+  color: #F1F1F2; /* Submit button text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cat-form input[type="submit"]:hover {
+  background-color: #A1D6E2; /* Hover effect color */
+  color: #1995AD; /* Hover text color */
+}
+
+/* Submit button styling for better appearance */
+.submitbutton, .submitbutton:hover, .submitbutton:active, .submitbutton:focus {
+  background: #1995AD; /* Main color */
+  border: none;
+  border-radius: 50px;
+  color: #F1F1F2; /* Light text color */
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+  outline: none; /* Remove default outline */
+}
+
+/* Hover effect for submit button */
+.submitbutton:hover {
+  background: #A1D6E2; /* Light blue */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Box shadow on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Active effect for submit button */
+.submitbutton:active {
+  background: #1995AD; /* Dark blue */
+  transform: translateY(0); /* Reset lift on active */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Smaller shadow on active */
+}
+
+/* Focus effect for submit button */
+.submitbutton:focus {
+  background: #F1F1F2; /* Light grey */
+  color: #1995AD; /* Dark blue text */
+  box-shadow: 0 0 0 3px rgba(25, 149, 173, 0.5); /* Light blue shadow */
+}

@@ -1,0 +1,147 @@
+/* Universal selector to apply box-sizing rule to all elements */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Container class to define the main layout of the page */
+  .container {
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full width */
+    background-color:#F1F1F2; /* Background color */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: row; /* Align children in a row */
+    overflow: hidden;
+    padding-bottom: 7%;
+  }
+  
+  /* Side navigation bar */
+  .sideNav {
+    width: 20%; /* Sidebar width */
+    background-color:#A1D6E2; /* Background color */
+  }
+  
+  /* Logo container within the sidebar */
+  .logoContainer {
+    width: 100%; /* Full width */
+    height: 30%; /* 30% of the sidebar height */
+    background-color:#1995AD; /* Background color */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Align children in a column */
+    justify-content: center; /* Center children vertically */
+    align-items: center; /* Center children horizontally */
+    margin-top: 2%; /* Top margin */
+    margin-bottom: 5%; /* Bottom margin */
+    ;
+  }
+  
+  /* Logo image */
+  .logo {
+    padding-top: 5%; /* Top padding */
+    height: 75%; /* 75% of container height */
+    width: 75%; /* 75% of container width */
+  }
+  
+  /* Logo heading text */
+  .logoheading {
+    color: black; /* Text color */
+    padding-bottom: 8%; /* Bottom padding */
+  }
+
+
+
+/* Link styles including hover, active, and focus */
+.link, 
+.link:hover, 
+.link:active, 
+.link:focus {
+  height: 10%;
+  color: white;
+  background-color: #A1D6E2; /* Light blue */
+  text-decoration: none;
+
+  padding: 15px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  display: block; /* Ensures each link is on a new line */
+  transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+  outline: none;
+  margin-bottom: 10px; /* Adds space between the links */
+}
+
+/* Hover effect */
+.link:hover {
+  background-color: #1995AD; /* Dark blue */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Active effect */
+.link:active {
+  background-color: #1995AD; /* Dark blue */
+  transform: translateY(0);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Focus effect */
+.link:focus {
+  background-color: #F1F1F2; /* Light grey */
+  color: #1995AD; /* Dark blue text */
+  box-shadow: 0 0 0 3px rgba(25, 149, 173, 0.5); /* Light blue shadow */
+}
+
+/* Additional responsive styling */
+@media (max-width: 768px) {
+  .link {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
+
+  .maincontent{
+    padding:1%;
+    width:80%;
+    background-color:#F1F1F2;
+
+
+
+
+  }
+
+
+
+  .logout-button {
+    
+    
+    display: inline-block;
+    padding: 8px 35%;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #1995AD; /* Button color */
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+  }
+  
+  .logout-button:hover {
+    background-color:red; /* Darker shade for hover */
+    transform: translateY(-3px); /* Lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .logout-button:active {
+    background-color: red; /* Even darker shade for active state */
+    transform: translateY(1px); /* Slight push down on click */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .logout-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5); /* Focus ring */
+  }
+  

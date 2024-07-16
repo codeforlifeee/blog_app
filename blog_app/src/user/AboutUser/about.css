@@ -1,0 +1,33 @@
+.about-container {
+    background: linear-gradient(to bottom right, #A1D6E2, #1995AD, #F1F1F2);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .about-content {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .about-heading {
+    font-size: 2.5em;
+    color: #1995AD;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .about-description {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+  }
+  
